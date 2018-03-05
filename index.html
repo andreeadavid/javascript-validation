@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="hide" class="hide" >
+                <button value="clear" class="btn_up">X</button>
+                <img src="https://www.shareicon.net/data/2016/08/20/817720_check_395x512.png" alt="check" width="20px">
+                <div id="banner">
+                </div> 
+            </div>
+        <div class="page" >
+        <form class="formular" form id="regForm" name="registerationform" method="POST"  >
+            <input class="name" name="first" id="firstName" type="text" placeholder="First Name">
+            <input class="name"  id="lastName" type="text" placeholder="Last Name">
+            <p>Gender</p>
+            <p><input class="gender" id="gender" type="radio" name="gender" value="M" checked >M</p>
+            <p><input class="gender"  type="radio" name="gender" value="F">F</p>
+            <textarea id="textarea" class="textarea name" cols="40" rows="8" placeholder="Your message here..."></textarea>
+            <input id="submit" name="reg" type="button" onclick="formValidate(this.form)" class="btn" value="Submit" >
+        </form>
+        <img class="form-img" src="https://i.pinimg.com/736x/ae/ee/04/aeee04e8dd58ad0452441caa381c9d47--reading-aesthetic-book-aesthetic.jpg" alt="" height="360px;" width="250px">
+    </div>
+    <div class="displayResults">
+    <h4>Your Message:</h4>
+    <p class="results" id="getResults"></p>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>
